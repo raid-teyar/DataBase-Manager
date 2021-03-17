@@ -8,25 +8,21 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+        <a class="navbar-brand" href="#">Data Base Manager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item navbar-brand">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @style = " color: azure ;" })</a>
+              <a class="nav-item navbar-brand">@Html.ActionLink("Help", "Index", "Help", new { area = "" }, new { @style = " color: azure ;" })</a>
+              <a class="nav-item navbar-collapse" href="https://localhost:44311/swagger" style = " color: azure ; margin-left: 20px" >Swagger</a>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+    </nav>
+    <div class="container body-content" style="margin-top: 50px;">
         @RenderBody()
         <hr />
         <footer>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WPFDataManger.Helpers;
 using WPFDataManger.ViewModels;
 
 namespace WPFDataManger
@@ -25,7 +26,9 @@ namespace WPFDataManger
 
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAPIHelper, APIHelper>();
+                
            
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)

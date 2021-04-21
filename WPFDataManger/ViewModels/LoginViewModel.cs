@@ -5,11 +5,20 @@ using System.Text;
 using System.Windows.Controls;
 using System.Threading.Tasks;
 using Caliburn.Micro;
+using WPFDataManger.Helpers;
+using System.Windows;
 
 namespace WPFDataManger.ViewModels
 {
     public class LoginViewModel: Screen
     {
+        private IAPIHelper _apiHelper;
+
+        public LoginViewModel(IAPIHelper aPIHelper)
+        {
+            _apiHelper = aPIHelper;
+        }
+
         private string _password;
 
         public string Password
@@ -76,9 +85,24 @@ namespace WPFDataManger.ViewModels
         }
 
 
-        public void Login(string username, string password)
+        public async Task Login(string username, string password)
         {
-           
+            try
+            {
+
+                ErrorMsg = "Loading...";
+                var result = await _apiHelper.Authenticate(username, password);
+                ErrorMsg = "Loging Succeed!";
+
+            }
+            catch(Exception ex)
+            {
+                ErrorMsg = ex.Message + "invalid email or password";
+            }
+
+            
+
+            
         }
     }
 }

@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WPFDataManger.Views"
         mc:Ignorable="d"
         Title="ShellView" Height="460" Width="800">
+
     <DockPanel>
         <Menu DockPanel.Dock="Top" FontSize="17">
             <MenuItem Header="File">
@@ -23,6 +24,15 @@
             </MenuItem>
         </Menu>
         <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="original.png" Stretch="UniformToFill" Opacity="0.5">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-0.25"/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Grid.Background>
             <ContentControl Margin="5" Name="ActiveItem"/>
         </Grid>
     </DockPanel>

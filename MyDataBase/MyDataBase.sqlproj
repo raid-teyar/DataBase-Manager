@@ -71,6 +71,7 @@
     <Build Include="dbo\Tables\SalePublic.sql" />
     <Build Include="dbo\Tables\Itemes.sql" />
     <Build Include="dbo\Tables\Inventory.sql" />
+    <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyDataBase.refactorlog" />

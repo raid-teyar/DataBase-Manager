@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WPFDataManger.Models
+namespace WPFDataManager.Library.Models
 {
     public class AuthenticatedUser
     {

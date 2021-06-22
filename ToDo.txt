@@ -1,0 +1,43 @@
+	Inventory management
+Multiple functions and responsibilities can make a retail owner forget about refilling the stock. 
+The retail management software provides the convenience of alerting the owner to reorder the inventory automatically. 
+Stocking the right inventory at the right time will give the right amount of sales.
+
+	Customer retention and targeting them 
+Retail management software has eased the target based marketing and crafting campaigns, 
+loyalty programs accordingly.
+It gives accurate data about the frequency of a particular shopper walking to your store, what most he buys, 
+notifying them about the latest discounts etc.
+
+	Business forecasting and data analysis
+Which product is billed the most? 
+How much inventory should be stocked to get profit? All these questions of retailers go unanswered until the data 
+prediction feature of the retail management system helps retailers with various sales reports,
+data analytics and complex data calculations, which results in business decisions of tracking profit margins, 
+monitor inventory, customer buying patterns, managing of expenses and reduction of waste. With this, 
+retailers can spend more time making innovations to their business.
+
+	Operational features
+Retail management systems have features to address daily operational needs such as the generation of daily reports, 
+sales reports, real-time analytics, refund management, cash management,
+promotions and discounts management and many more on a single dashboard. 
+
+	Multi-currency Support
+With digital shopping being the most preferred, retailers need to have a compact solution which can 
+manage the operations of the in-store business as well as online,  which means the shopping experience should be optimized.
+During peak seasons, mobile POS solutions give the convenience of a faster checkout with secure transactions and payments in multiple currencies. 
+
+	Periodic Billing Support
+Many retailers provide their customers with the option to pay in instalments. 
+In such a scenario, a retail management system can set a periodic billing method for the customer.
+The installments will automatically get debited from the account authorized by the customer.
+
+	Multiple device compatibility
+Retail management systems can work with multiple devices, operating systems and configurations. 
+
+	Omnichannel Capabilities
+
+In the present digital time, offline retailers are making themselves available on the web.
+Using a retail management software gives the retailer manage effectively the physical store operations as well as ecommerce in a single platform. 
+With shoppers demanding many conveniences in shopping, 
+retailers are opting for an omnichannel approach and are striving for giving a smooth shopping experience to the customers. 

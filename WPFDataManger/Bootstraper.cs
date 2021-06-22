@@ -2,10 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using WPFDataManger.Helpers;
+using WPFDataManager.Library.Api;
+using WPFDataManager.Library.Models;
 using WPFDataManger.ViewModels;
 
 namespace WPFDataManger
@@ -27,7 +26,8 @@ namespace WPFDataManger
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
-                .Singleton<IAPIHelper, APIHelper>();
+                .Singleton<IAPIHelper, APIHelper>()
+                .Singleton<ILoggedInUserModel, LoggedInUserModel>();                
                 
            
             GetType().Assembly.GetTypes()

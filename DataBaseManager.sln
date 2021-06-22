@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataManger", "WPFDataMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseManager.Library", "DatBaseManager.Library\DataBaseManager.Library.csproj", "{A46C5F73-1A66-40BC-8E72-10A6686BB07A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataManager.Library", "WPFDataManager.Library\WPFDataManager.Library.csproj", "{B6584E11-B81C-4A22-A893-7A53C5B2BE36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68CDD31B-B2C7-41E3-B216-AAF7B384F6C4}"
+	ProjectSection(SolutionItems) = preProject
+		ToDo.txt = ToDo.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +42,10 @@ Global
 		{A46C5F73-1A66-40BC-8E72-10A6686BB07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46C5F73-1A66-40BC-8E72-10A6686BB07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46C5F73-1A66-40BC-8E72-10A6686BB07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6584E11-B81C-4A22-A893-7A53C5B2BE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6584E11-B81C-4A22-A893-7A53C5B2BE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6584E11-B81C-4A22-A893-7A53C5B2BE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6584E11-B81C-4A22-A893-7A53C5B2BE36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

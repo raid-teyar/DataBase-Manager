@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Controls;
 using System.Threading.Tasks;
 using Caliburn.Micro;
-using WPFDataManger.Helpers;
-using System.Windows;
+using WPFDataManager.Library.Api;
 
 namespace WPFDataManger.ViewModels
 {
     public class LoginViewModel: Screen
     {
         private IAPIHelper _apiHelper;
+        private bool success = false;
 
         public LoginViewModel(IAPIHelper aPIHelper)
         {
             _apiHelper = aPIHelper;
         }
 
-        private string _password;
+        private string _password = "@Minouch07";
 
         public string Password
         {
@@ -33,7 +29,7 @@ namespace WPFDataManger.ViewModels
             }
         }
 
-        private string _username;
+        private string _username = "rd07gamer@gmail.com";
 
         public string UserName
         {
@@ -46,15 +42,15 @@ namespace WPFDataManger.ViewModels
             }
         }
 
-        private string _errorMsg;
+        private string _Msg;
 
-        public string ErrorMsg
+        public string Msg
         {
-            get { return _errorMsg; }
+            get { return _Msg; }
             set 
             {
-                _errorMsg = value;
-                NotifyOfPropertyChange(() => ErrorMsg);
+                _Msg = value;
+                NotifyOfPropertyChange(() => Msg);
             }
         }
 
@@ -74,11 +70,11 @@ namespace WPFDataManger.ViewModels
             }
             if (username.Length <= 5 && username.Length > 0 || password.Length <= 5 && password.Length > 0)
             {
-                ErrorMsg = "Password and Username lenght must be greater than 5";
+                Msg = "Password and Username lenght must be greater than 5";
             }
             else
             {
-                ErrorMsg = "";
+                Msg = "";
             }
 
             return output;
@@ -90,16 +86,23 @@ namespace WPFDataManger.ViewModels
             try
             {
 
-                ErrorMsg = "Loading...";
+                Msg = "Loading...";
                 var result = await _apiHelper.Authenticate(username, password);
-                ErrorMsg = "Loging Succeed!";
+                //captue info about user
+                var data = await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
+                Msg = "Done!!";
+                success = true;
 
             }
             catch(Exception ex)
             {
-                ErrorMsg = ex.Message + "invalid email or password";
+                Msg = ex.Message + "invalid email or password";
             }
 
+            if (success)
+            {
+
+            }
             
 
             

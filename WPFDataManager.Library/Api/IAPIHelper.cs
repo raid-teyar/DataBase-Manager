@@ -1,10 +1,11 @@
 ﻿using System.Threading.Tasks;
-using WPFDataManger.Models;
+using WPFDataManager.Library.Models;
 
-namespace WPFDataManger.Helpers
+namespace WPFDataManager.Library.Api
 {
     public interface IAPIHelper
     {
         Task<AuthenticatedUser> Authenticate(string username, string password);
+        Task<LoggedInUserModel> GetLoggedInUserInfo(string token);
     }
-}
+}  

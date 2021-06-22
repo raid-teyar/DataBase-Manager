@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatBaseManager.Library.Models
+namespace WPFDataManager.Library.Models
 {
-    public class UserModel
+    public class LoggedInUserModel : ILoggedInUserModel
     {
+        public string Token { get; set; }
+
         public string Id { get; set; }
 
         public string FirstName { get; set; }
@@ -19,4 +21,3 @@ namespace DatBaseManager.Library.Models
         public DateTime CreatedDate { get; set; }
     }
 }
- 
